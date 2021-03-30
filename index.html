@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <title>Weather Dashboard</title>
+    <link rel="shortcut icon" type="image/png" href="./Assets/open-iconic-master/svg/cloudy.svg"/>
+    <!-- Iconic import -->
+    <link rel="stylesheet" href="./Assets/open-iconic-master/font/css/open-iconic-bootstrap.css">
+    <link rel="stylesheet" href="./Assets/css/weatherstyle.css">
+</head>
+<body>
+    <!-- NAVBAR SECTION -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Weather Dashboard</a>
+        </div>
+    </nav>
+    <!-- CONTAINER SECTION -->
+    <div class="container-fluid">
+        <!-- SEARCH SECTION -->
+        <div class="search row px-3 py-3">
+            <!-- SEARCH INPUT -->
+            <div class="col-8">
+                <div class="input-group mx-auto">
+                    <span class="input-group-text">Search for a city</span>
+                    <input type="text" class="form-control" placeholder="Enter city" aria-label="Enter city" aria-describedby="cityInput">
+                    <button class="btn btn-secondary" type="button" id="cityInput">Search</button>
+                </div>
+            </div>
+            <!-- SEARCH HISTORY -->
+            <div class="col-4">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Search History
+                    </button>
+                    <ul id="searchHistoryList" class="dropdown-menu">
+                        <!-- temp item below -->
+                        <li><a id="city" class="dropdown-item" href="#">Atlanta</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- CITY DETAIL SECTION -->
+        <div class="city-detail">
+
+        </div>
+        <!-- CITY FIVE DAY FORECAST SECTION -->
+        <div class="city-five-day">
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="./Assets/js/weather.js"></script>
+</body>
+</html>
