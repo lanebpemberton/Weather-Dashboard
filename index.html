@@ -26,8 +26,8 @@
             <div class="col-8">
                 <div class="input-group mx-auto">
                     <span class="input-group-text">Search for a city</span>
-                    <input type="text" class="form-control" placeholder="Enter city" aria-label="Enter city" aria-describedby="cityInput">
-                    <button class="btn btn-secondary" type="button" id="cityInput">Search</button>
+                    <input id="searchInput" type="text" class="form-control" placeholder="Enter city" aria-label="Enter city" aria-describedby="searchButton">
+                    <button class="btn btn-secondary" type="button" id="searchButton">Search</button>
                 </div>
             </div>
             <!-- SEARCH HISTORY -->
@@ -44,7 +44,7 @@
             </div>
         </div>
         <!-- CITY DETAIL SECTION -->
-        <div id="cityDetailSection" class="city-detail px-3 py-3">
+        <div id="cityDetailSection" class="city-detail px-3 py-3" style="display: none;">
             <h3 id="cityDetailTitle">Atlanta</h3>
             <h4 id="cityDetailTemp">Temperature: 90 deg F</h4>
             <h4 id="cityDetailHumidity">Humidity: 41%</h4>
@@ -62,6 +62,18 @@
                         <div class="card-body">
                             <span class="oi oi-sun"></span>
                             <p id="day1Temp" class="pt-2">Temp</p>
+                            <p id="day1Hum">Hum</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-2 py-3">
+                    <div class="card">
+                        <div class="card-header">
+                            03/30/2021
+                        </div>
+                        <div class="card-body">
+                            <span class="oi oi-sun"></span>
+                            <p id="day2Temp" class="pt-2">Temp</p>
                             <p id="day2Hum">Hum</p>
                         </div>
                     </div>
@@ -73,8 +85,8 @@
                         </div>
                         <div class="card-body">
                             <span class="oi oi-sun"></span>
-                            <p id="day1Temp" class="pt-2">Temp</p>
-                            <p id="day2Hum">Hum</p>
+                            <p id="day3Temp" class="pt-2">Temp</p>
+                            <p id="day3Hum">Hum</p>
                         </div>
                     </div>
                 </div>
@@ -85,8 +97,8 @@
                         </div>
                         <div class="card-body">
                             <span class="oi oi-sun"></span>
-                            <p id="day1Temp" class="pt-2">Temp</p>
-                            <p id="day2Hum">Hum</p>
+                            <p id="day4Temp" class="pt-2">Temp</p>
+                            <p id="day4Hum">Hum</p>
                         </div>
                     </div>
                 </div>
@@ -97,20 +109,8 @@
                         </div>
                         <div class="card-body">
                             <span class="oi oi-sun"></span>
-                            <p id="day1Temp" class="pt-2">Temp</p>
-                            <p id="day2Hum">Hum</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-2 py-3">
-                    <div class="card">
-                        <div class="card-header">
-                            03/30/2021
-                        </div>
-                        <div class="card-body">
-                            <span class="oi oi-sun"></span>
-                            <p id="day1Temp" class="pt-2">Temp</p>
-                            <p id="day2Hum">Hum</p>
+                            <p id="day5Temp" class="pt-2">Temp</p>
+                            <p id="day5Hum">Hum</p>
                         </div>
                     </div>
                 </div>
